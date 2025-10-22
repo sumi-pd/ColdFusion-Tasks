@@ -68,31 +68,31 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('employmentForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  if (!validateForm()) return;
+    e.preventDefault();
+    if (!validateForm()) return;
 
-  const formData = new FormData(this);
+    const formData = new FormData(this);
 
-  const phone = `${formData.get('phone-part1')}-${formData.get('phone-part2')}-${formData.get('phone-part3')}`;
-  let month = parseInt(formData.get('month'), 10);
-  let day = parseInt(formData.get('day'), 10);
-  let year = parseInt(formData.get('year'), 10);
+    const phone = `${formData.get('phone-part1')}-${formData.get('phone-part2')}-${formData.get('phone-part3')}`;
+    let month = parseInt(formData.get('month'), 10);
+    let day = parseInt(formData.get('day'), 10);
+    let year = parseInt(formData.get('year'), 10);
 
-  const monthStr = month.toString().padStart(2, '0');
-  const dayStr = day.toString().padStart(2, '0');
-  const startDate = `${dayStr}-${monthStr}-${year}`;
+    const monthStr = month.toString().padStart(2, '0');
+    const dayStr = day.toString().padStart(2, '0');
+    const startDate = `${dayStr}-${monthStr}-${year}`;
 
-  formData.append('phone', phone);
-  formData.append('startDate', startDate);
+    formData.append('phone', phone);
+    formData.append('startDate', startDate);
 
-  fetch('23.cfc?method=saveFormData', {
-    method: 'POST',
-    body: formData
-  })
-  .then(res => res.text())
-  .then(response => {
-    alert("Form submitted successfully!");
-    document.getElementById('employmentForm').reset();
-  })
-  .catch(err => alert("Error submitting form: " + err));
+    fetch('23.cfc?method=saveFormData', {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.text())
+    .then(response => {
+      alert("Form submitted successfully!");
+      document.getElementById('employmentForm').reset();
+    })
+    .catch(err => alert("Error submitting form: " + err));
 });

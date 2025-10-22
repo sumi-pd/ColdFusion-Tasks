@@ -68,11 +68,15 @@
       <label for="salaryDollars">Salary Requirements</label>
       <div class="salary-inputs">
         <span>$</span>
-        <input id="salaryDollars" name="salaryDollars" type="text" maxlength="10" required />
-        <label>Dollars</label>
+        <div>
+          <input id="salaryDollars" name="salaryDollars" type="text" maxlength="10" required />
+          <label>Dollars</label>
+        </div>
         <span>.</span>
-        <input id="salaryCents" name="salaryCents" type="text" maxlength="2" required />
-        <label>Cents</label>
+        <div>
+          <input id="salaryCents" name="salaryCents" type="text" maxlength="2" required />
+          <label>Cents</label>
+        </div>
       </div>
     </div>
 
