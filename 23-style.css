@@ -1,0 +1,279 @@
+body {
+  background-color: #669900;
+  margin: 17px 0 15px 0;
+  padding: 0;
+  font-size: small;
+}
+
+
+form {
+  background: #fff;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-title {
+  font-size: 160% !important;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000 !important;
+}
+
+.header-logo {
+  background-color: #99CC00;
+  max-width: 700px;
+  margin: 0 auto; 
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.header-logo img {
+  display: inline-block;
+  padding: 5px 10px;
+  height: 50px;
+}
+
+.form-title {
+  text-align: left;
+  margin: 10px 0 20px 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 160% !important;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000 !important;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #444;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.name-row {
+  display: flex;
+  gap: 15px;
+}
+
+.name-row .form-group {
+  flex: 1;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.currency-input {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.error {
+  border-color: red;
+}
+
+#error-message {
+  display: none;
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+small {
+  display: block;
+  color: #777;
+  margin-top: 4px;
+}
+
+.dotted-line {
+  border: none;
+  border-top: 1px dotted #000;
+}
+
+.date-picker-field {
+  margin-bottom: 1rem;
+}
+
+.date-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.date-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.date-inputs input {
+  width: 40px;
+  text-align: center;
+  padding: 5px;
+}
+
+.date-inputs input#year {
+  width: 60px;
+}
+
+.separator {
+  font-weight: bold;
+}
+
+.calendar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.calendar-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.salary-requirement {
+  margin-bottom: 1rem;
+}
+
+.salary-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.salary-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.salary-inputs input {
+  width: 80px;
+  padding: 5px;
+  text-align: right;
+}
+
+.salary-inputs input#salary-cents {
+  width: 40px;
+}
+
+.currency-symbol,
+.decimal-point {
+  font-size: 1rem;
+}
+
+.drop-down {
+  width: 55%;
+}
+
+.name-row {
+  margin-bottom: 1rem;
+}
+
+.name-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.name-inputs .input-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-inputs input {
+  width: 120px;
+  padding: 5px;
+  text-align: left;
+}
+
+.sub-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.phone-input .phone-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.phone-inputs {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.input-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-inputs input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+.symbol {
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+.sub-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.required{
+  color: red;
+}
