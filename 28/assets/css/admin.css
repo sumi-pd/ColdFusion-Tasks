@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+.header {
+    background: #5c89b6;
+    color: #fff;
+    padding: 20px;
+}
+.header .welcome {
+    float: left;
+    font-size: 18px;
+}
+.header .actions {
+    float: right;
+}
+.header .actions a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.container {
+    padding: 30px;
+}
+.card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    margin: 10 auto; 
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background: #2c669c;
+}
+.add-btn {
+    background: #27ae60;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
